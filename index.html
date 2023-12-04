@@ -34,22 +34,27 @@
     </style>
 </head>
 <body>
+    <!-- Add the audio element for background music -->
+    <audio id="backgroundMusic" src="Josh Hutcherson Whistle.mp3" loop></audio>
+
     <img id="prank-image" src="josh.jpg" alt="Prank Image">
     <img class="prank-image" src="cool.jpg" alt="Prank Image 2">
     <p id="prank-text">Click on the text (trust me bbgirls)</p>
     
-     <script>
-        // JavaScript to toggle the visibility of the image
+    <script>
+        // JavaScript to toggle the visibility of the image and play background music
         document.body.addEventListener('click', function () {
             var prankImage = document.getElementById('prank-image');
             var prankText = document.getElementById('prank-text');
+            var backgroundMusic = document.getElementById('backgroundMusic');
 
             // Toggle visibility
             prankImage.style.display = 'block';
             prankText.style.display = 'none';
+
+            // Play background music
+            backgroundMusic.play();
         });
     </script>
-</body>
-</html>
 </body>
 </html>
